@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-	<title>Vis & Society Assignment 3</title>
+	<title>Vis & Society Assignment 4</title>
 	<link rel="stylesheet" href="https://vis-society.github.io/assignments/report.css" />
 </head>
 
@@ -13,20 +13,29 @@
 		</h1>
 
 		<p>
-			<strong>Your Name</strong> — <em>Your MIT Email Address</em>
+			<strong>Marcos Adrian Logrono</strong> — <em>mlogrono@mit.edu</em>
 		</p>
 	</header>
 
 	<main>
-    <h2>Proposition: [STATE PROPOSITION]</h2>
+    <h2>Proposition: "Increased government investment in education leads to higher educational attainments"</h2>
 
-		<section>
-      <h3>FOR the Proposition</h3>
+	<section>
+		<p><strong>Chosen Dataset:</strong>
+			Human Development Indicators, 1960-2020.
+		</p>
+
+		<p><strong>Subset:</strong>
+			Education
+		</p>
+		
+		<h3>Visualization FOR the Proposition</h3>
+
 
       <figure>
-				<img src="IMAGE_FILENAME" alt="" />
+				<img src="images/image_for.png" alt="" width="900"/>
 				<figcaption>
-					BRIEF CAPTION HERE.
+					Correlation between tertiary educational attainment and education investment factors.
 				</figcaption>
 			</figure>
 
@@ -35,19 +44,25 @@
 			</p>
 
 			<ul>
-				<li>RATIONALE_1</li>
-				<li>RATIONALE_2</li>
-				<li>RATIONALE_3</li>
+				<li>I first designed a bubble map to visualize educational attainment and pupil-teacher ratios across countries. A sequential color scale represents educational attainment, while circle size encodes the pupil-teacher ratio. The values in this map reflect country-level averages over the 1960 to 2020 timespan. 
+					This figure was created to illustrate the global distribution of these educational parameters. <strong>Score:</strong> 2</li>
+				<li>For the scatter plots, I averaged the pupil-teacher ratio, government expenditure per primary school student, and educational attainment based on HDI classification. Initially, I considered plotting individual data points within a specific time range instead of averaging. 
+					However, this resulted in overplotting, making the trends less discernible. Averaging by HDI classification helped clean the visualization and highlight the underlying trends more effectively. <strong>Score:</strong> 1</li>
+				<li>I incorporated text boxes to highlight key points in the visualization. These annotations help guide the viewer through the multiple plots and effectively narrate the intended story. <strong>Score:</strong> 1</li>
+				<li>I excluded certain outliers from the scatter plots, which helped define the linear trend more clearly. Some of these outliers fell far outside the scale of all other points (some ratios were above 100%), 
+					suggesting potential errors or inconsistencies in the reported data. <strong>Score:</strong> -0.5</li>
+				<li>I included notes at the bottom to clarify the definitions of the parameters used and to state that the averaged values are based on data from 1960 to 2020. This enhances transparency and minimizes bias in the analysis, 
+					helping to strengthen the credibility of the visualization. <strong>Score:</strong> 0.5</li>
 			</ul>
     </section>
 
     <section>
-      <h3>AGAINST the Proposition</h3>
+      <h3>Visualization AGAINST the Proposition</h3>
 
       <figure>
-				<img src="IMAGE_FILENAME" alt="" />
+				<img src="images/image_against.png" alt="" width="900"/>
 				<figcaption>
-          BRIEF CAPTION HERE.
+					Government investment in education is not a reliable indicator of a country's educational outcomes.
 				</figcaption>
 			</figure>
 
@@ -56,9 +71,13 @@
 			</p>
 
 			<ul>
-				<li>RATIONALE_1</li>
-				<li>RATIONALE_2</li>
-				<li>RATIONALE_3</li>
+				<li>I created a bar chart to compare average total government expenditure on education and educational attainment across different HDI classifications. 
+					The bar size represents average total government expenditure on education for each HDI level, while a sequential color scale encodes educational attainment. Notably, government expenditure in this chart is defined differently than in the first visualization. 
+					Interestingly, this comparison reveals that, under this definition, government expenditure does not directly correlate with educational attainment, contradicting the trend observed in the first visualization.</li>
+				<li>I created a scatter plot of educational attainment versus government expenditure per student (as a percentage of GDP per capita) for low-HDI countries only. This visualization uses a different measurement of government expenditure. 
+					I marked specific years and countries to clarify that the values are not averaged. Additionally, I included a trend line to highlight the inverse relationship between educational attainment and government expenditure per student in low-HDI countries.</li>
+				<li>Few outliers were excluded from this visualization, as filtering for low-HDI countries naturally removed most of them. I also incorporated text boxes to highlight the most relevant trends. I feel this approach is an effective communication tool, helping to 
+					guide the viewer and reinforce the intended message.</li>
 			</ul>
     </section>
 
